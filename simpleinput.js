@@ -3,10 +3,10 @@ const dotenv = require("dotenv")
 dotenv.config()
 const readline = require("readline")
 
-// Access your API key as an environment variable (see "Set up your API key" above)
+// Access your API key as an environment variable (see "Set up your API key" above) hello bee
 const genAI = new GoogleGenerativeAI(process.env.API_KEY);
 const userInterface = readline.createInterface({
-    input: process.stdin,
+    input: process.stdin, 
     output: process.stdout
 })
 
