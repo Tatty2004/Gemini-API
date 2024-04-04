@@ -2,15 +2,88 @@
 <html>
     <head>
         <title>Beefriend</title>
+        <style>h1 {
+            color: grey;
+            font-family: verdana;
+            font-size: 300%;
+          }
+          body {
+            color: orange;
+            font-family: verdana;
+            font-size: 160%;
+            background-color: beige;
+          }
+          .slidecontainer {
+  width: 90%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 90%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #cca91e;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #aa8104;
+  cursor: pointer;
+}
+.button {
+  border: 10px;
+  background-color: bisque;
+  color: rgb(97, 97, 97);
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  border-radius: 12px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+        </style>  
     </head>
     <body>
-        <h1>Hello, World!</h1>
-        <script>
-           // export API_KEY = AIzaSyCZVU4WBA9-W7uTAGFosex95I6gaUqVgbc
-            //npm install @google/generative-ai
-
-        </script>
+        <h1>Beefriend Chat Bot</h1>
+        
         <label for = "Prompt">Prompt:</label>
         <input type="text" id="Prompt" name="Prompt" placeholder="type your question here">
+        <p>How in depth</p>
+        <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+          </div>
+          <p>Value: <span id="demo"></span></p>
+          <button class="button">Click to Summarize!</button>
+          <script>
+            // export API_KEY = AIzaSyCZVU4WBA9-W7uTAGFosex95I6gaUqVgbc
+             //npm install @google/generative-ai
+             var slider = document.getElementById("myRange");
+             var output = document.getElementById("demo");
+             output.innerHTML = slider.value;
+ 
+             slider.oninput = function() {
+             output.innerHTML = this.value ;
+             }
+         </script>
     </body>
 </html>
