@@ -1,0 +1,19 @@
+{
+  "name": "Beefriend Summarizer",
+  "version": "1.0.0",
+  "description": "Summarizes the text on a website",
+  "permissions": ["tabs"],
+  "content_scripts": [
+    {
+      "js": ["beefriendjava.js"]
+    }
+  ],
+  "action": {
+    "default_icon": {
+
+    },
+    "default_title": "Beefriend Summarizer",
+    "default_popup": "test.html"
+  },
+  "manifest_version": 3
+}
