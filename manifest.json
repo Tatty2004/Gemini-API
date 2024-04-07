@@ -1,6 +1,6 @@
 {
     "name": "Summarize",
-    "description": "Base Level Extension",
+    "description": "Summarize documents with a click! Ask questions about the text and improve your reading comprehension. Powered by Google Gemini API. ",
     "version": "1.0",
     "manifest_version": 3,
     "action": {
