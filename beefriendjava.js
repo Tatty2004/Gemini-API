@@ -7,10 +7,11 @@ let output = document.getElementById("demo");
 output.innerHTML = slider.value;
  
 slider.oninput = function() {
-output.innerHTML = this.value ;
+   output.innerHTML = this.value;
 }
 
-function click() {
-   // console.log("Summarizing...");
+function clicked() {
+   //console.log("Summarizing..."); 
+   document.getElementById("summaryArea").innerHTML = "Beefriend: Summarizing...";
                 
 }

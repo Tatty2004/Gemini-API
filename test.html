@@ -7,15 +7,17 @@
     <body>
         <h1>Beefriend Chat Bot</h1>
         
-        <label for = "Prompt">Prompt:</label>
-        <input type="text" id="Prompt" name="Prompt" placeholder="type your question here">
+        
         <p>How in depth</p>
         <div class="slidecontainer">
             <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
           </div>
           <p>Value: <span id="demo"></span></p>
-          <button id="summarize" class="button" onclick="click()">Click to Summarize!</button>
-          <p> beefriend :<span id="summaryArea"></span></p>
+          <button onclick="clicked()" id="summarize" class="button">Click to Summarize!</button>
+          <p> <span id="summaryArea"></span></p>
+
+          <label for = "Prompt">Prompt:</label>
+        <input type="text" id="Prompt" name="Prompt" placeholder="type your question here">
           <script src="beefriendjava.js">
          </script>
     </body>
