@@ -2,6 +2,8 @@
 <html>
     <head>
         <title>Beefriend</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'">
         <link rel="stylesheet" href="beefriendstyle.css"> 
     </head>
     <body>
@@ -13,12 +15,15 @@
             <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
           </div>
           <p>Value: <span id="val"></span></p>
-          <button onclick="clicked()" id="summarize" class="button">Click to Summarize!</button>
+          <button id="summarize" class="button">Click to Summarize!</button>
           <p> <span id="summaryArea"></span></p>
 
           <label for = "Prompt">Prompt:</label>
-        <input type="text" id="Prompt" name="Prompt" placeholder="type your question here">
+          <div id = "main">
+        <input type="text" id="input" name="Prompt" placeholder="type your question here" autofocus="true">
+        </div>
           <script src="beefriendjava.js">
          </script>
+         <script src="simpleinput.js"> </script>
     </body>
 </html>

@@ -60,3 +60,23 @@ body {
   transition-duration: 0.4s;
   cursor: pointer;
 }
+
+#main { 
+    position: fixed; 
+    top: 40%; 
+    right: 200px; 
+ 
+    …
+ 
+.messages {
+	display: flex;
+	flex-direction: column;
+	overflow: scroll;
+	height: 90%;
+	width: 100%;
+	background-color: white;
+	padding: 15px;
+	margin: 15px;
+	border-radius: 10px;
+}
+}
