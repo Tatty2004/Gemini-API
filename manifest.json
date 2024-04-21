@@ -1,19 +1,24 @@
 {
-    "name": "Summarize",
-    "description": "Summarize documents with a click! Ask questions about the text and improve your reading comprehension. Powered by Google Gemini API. ",
-    "version": "1.0",
-    "manifest_version": 3,
-    "permissions": [
-        "tabs", 
-        "activeTab"
-    ],
-    "host_permissions": [
-        "http://*/*",
-        "https://*/*"
-      ],
-    "action": {
-      "default_popup": "test.html",
-      "default_icon": "elsie1.png"
+
+  "name": "Beefriend Summarizer",
+  "version": "1.0.0",
+  "description": "Summarizes the text on a website",
+  "permissions": ["tabs", "activeTab"],
+  "content_scripts": [
+    {
+      "js": ["beefriendjava.js"]
     }
-    
-  }
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "action": {
+    "default_icon": {
+
+    },
+    "default_title": "Beefriend Summarizer",
+    "default_popup": "test.html"
+  },
+  "manifest_version": 3
+}
