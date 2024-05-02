@@ -16,12 +16,18 @@
           </div>
           <p>Value: <span id="val"></span></p>
           <button id="summarize" class="button">Click to Summarize!</button>
-          <p> <span id="summaryArea"></span></p>
+          <p> <span id="summaryArea"> ___ </span></p>
 
           <label for = "Prompt">Prompt:</label>
           <div id = "main">
         <input type="text" id="input" name="Prompt" placeholder="type your question here" autofocus="true">
         </div>
+        <script>
+        const element = document.getElementById("summarize");
+        element.addEventListener("click", function() {
+    document.getElementById("summaryArea").innerHTML = "SUMMARY HERE";
+          });
+        </script>
           <script src="beefriendjava.js">
          </script>
          <script src="simpleinput.js"> </script>

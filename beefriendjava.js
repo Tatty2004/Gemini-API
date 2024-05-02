@@ -10,9 +10,6 @@ slider.oninput = function() {
    output.innerHTML = this.value;
 }
 
-document.getElementById("summarize").addEventListener("click", () => {
-    document.getElementById("summaryArea").innerHTML = "SUMMARY HERE";
-});
 
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#input").addEventListener("keydown", function(e) {
