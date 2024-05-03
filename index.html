@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Beefriend</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'">
+        <link rel="stylesheet" href="beefriendstyle.css"> 
+    </head>
+    <body>
+        <h1>Beefriend Summarizer</h1>
+        <p>How in Depth?</p>
+        <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        </div>
+
+        <p>Detail: <span id="valueDisplay">50</span></p> 
+        <button id="summarize" class="button">Click to Summarize!</button>
+        <p id="statusMessage"> </p>
+        <p> <span id="summaryArea"> </span></p>
+
+        <script src="content.js"></script>
+        <script>const slider = document.getElementById("myRange");
+            const valueDisplay = document.getElementById("valueDisplay");
+            
+            valueDisplay.textContent = slider.value; 
+            
+            slider.addEventListener('input', function() {
+              valueDisplay.textContent = this.value; 
+            });
+        </script>
+    </body>
+</html>

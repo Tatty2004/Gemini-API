@@ -1,20 +1,27 @@
 {
-
-  "name": "Summarize",
+  "name": "Beefriend Summarizer",
   "version": "1.0.0",
-  "description": "Summarizes the text on a website",
-  "permissions": ["tabs", "activeTab"],
-
-  "host_permissions": [
-    "http://*/*",
-    "https://*/*"
+  "description": "Summarizes the text on the current website using the Gemini API", 
+  "permissions": [
+    "tabs",
+    "activeTab"
   ],
   "action": {
     "default_icon": {
-
+      "16": "assets/logo16.jpeg",
+      "32": "assets/logo32.jpeg",
+      "48": "assets/logo48.jpeg",
+      "128": "assets/logo128.jpeg"
     },
     "default_title": "Beefriend Summarizer",
-    "default_popup": "test.html"
+    "default_popup": "index.html"
   },
-  "manifest_version": 3
+  "manifest_version": 3,
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"]
+    }
+  ]
 }

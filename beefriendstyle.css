@@ -59,14 +59,20 @@ body {
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.4s;
+}
+
+.button:hover {
+  background-color: #e2cf97;
+
 }
 
 #main { 
-    position: fixed; 
-    top: 40%; 
-    right: 200px; 
- 
-    …
+    position: fixed;
+    top: 40%;
+    right: 200px;
+}
  
 .messages {
 	display: flex;
@@ -78,5 +84,4 @@ body {
 	padding: 15px;
 	margin: 15px;
 	border-radius: 10px;
-}
 }
