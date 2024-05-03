@@ -8,10 +8,6 @@
   ],
   "action": {
     "default_icon": {
-      "16": "assets/logo16.jpeg",
-      "32": "assets/logo32.jpeg",
-      "48": "assets/logo48.jpeg",
-      "128": "assets/logo128.jpeg"
     },
     "default_title": "Beefriend Summarizer",
     "default_popup": "index.html"
@@ -21,7 +17,7 @@
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],
-      "js": ["content.js"]
+      "js": ["src/content.js"]
     }
   ]
 }
